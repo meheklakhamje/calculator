@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 350px;
+            }
+            .btn {
+                width: 50px;
+                height: 50px;
+            }
+            .resultcontainer {
+                height: 100px;
+                border: 2px solid black;
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
+                padding: 15px;
+                font-size: 40px;
+            }
+            .inputcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 27px;
+                justify-content: space-evenly;
+            }
+            .row {
+                display: flex;
+                gap: 15px;
+                justify-content: space-around;
+                flex-grow: 1;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="resultcontainer">
+                <span id="result"></span>
+            </div>
+            <div class="inputcontainer">
+                <div class="row">
+                    <button class="btn" id="iclear">C</button>
+                    <button class="btn" id="iback">back</button>
+                    <button class="btn" id="imod">%</button>
+                    <button class="btn" id="idiv">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="num7">7</button>
+                    <button class="btn" id="num8">8</button>
+                    <button class="btn" id="num9">9</button>
+                    <button class="btn" id="imul">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="num4">4</button>
+                    <button class="btn" id="num5">5</button>
+                    <button class="btn" id="num6">6</button>
+                    <button class="btn" id="isub">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="num1">1</button>
+                    <button class="btn" id="num2">2</button>
+                    <button class="btn" id="num3">3</button>
+                    <button class="btn" id="iplus">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="num00">00</button>
+                    <button class="btn" id="num0">0</button>
+                    <button class="btn" id="idot">.</button>
+                    <button class="btn" id="iequal">=</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="logic.js"></script>
+    </body>
+</html>
